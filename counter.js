@@ -1,26 +1,29 @@
-let N = 500,
+let value = 500,
     div = 1,
-    count = 10
-    i = 0;
+    degr = 10,
+    num = 0,
+    count = 0;
 
-while (i <= N) {
+while (count <= value) {
 
-if (i < 10) {
-    console.log (i)
+if (num < 10) {
+    console.log (num);
+    count++;
 }
 
-else if (i == count) {
-    div = div + 1
-    count = count * 10
+else if (num == degr) {
+    div = div + 1;
+    degr = degr * 10;
     
-    if (i%div == 0) {
-        console.log (i)
+    if (num%div == 0) {
+        console.log (num);
+        count++;
     }
-    else continue;
 }
 
-else if (i%div == 0) {
-    console.log (i)
+else if (num%div == 0) {
+    console.log (num);
+    count++;
 }
-    i++;
+    num++;
 };
